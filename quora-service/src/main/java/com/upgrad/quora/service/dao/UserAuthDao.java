@@ -27,9 +27,8 @@ public class UserAuthDao {
     }
   }
 
-  public UserAuthEntity createAuthToken(final UserAuthEntity userAuthEntity) {
+  public void createAuthToken(final UserAuthEntity userAuthEntity) {
     entityManager.persist(userAuthEntity);
-    return userAuthEntity;
   }
 
   public void updateUserAuth(final UserAuthEntity updatedUserAuthEntity) {
